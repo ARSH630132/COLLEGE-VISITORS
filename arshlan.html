@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .main{
+            height: 100vh;
+            background-color: blueviolet;
+            color:white ;
+            display: grid;
+            place-items:  center;
+
+        }
+        .text{
+            animation:fa 8s linear infinite ;
+            font-size: x-large;
+            letter-spacing: 2px;
+            position: relative;
+        }
+        @keyframes fa {
+            0%   {color: rgb(255, 255, 255);
+            }
+            20%   {color: blueviolet;
+            }
+            40%   {color: rgb(255, 255, 255);
+            }
+            60%   {color: blueviolet;
+            }
+            80%   {color: rgb(255, 255, 255);
+            }
+            100%   {color: blueviolet;
+            }
+        }
+    .text::before{content:"";
+    animation: fs 5s linear infinite;
+    position: absolute;}
+    @keyframes fs{
+        0%{
+            content:"hello";
+        }
+        100%{
+            content:"world";
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1 class="text"></h1>
+    </div>
+</body>
+</html>.BACKGROUND {
+    background-image: URL("RR.jpg");
+    background-image:URL("SRGI.jpg");
+    background-image:URL("BANSAL.jpg");
+    background-image: URL("BBD.jpg");
+    background-image: URL("BNCET.jpg");
+    background-image: URL("RAMSWAROOP.jpg");
+    background-image: URL("GCRG.jpg");
+    HEIGHT:350px;
+    width: 48%;
+    MARGIN-LEFT:50%;
+    MARGIN-TOP:-58px;
+    REPEAT:NO-REPEAT;
+
+    animation:SLIDER 30s INFINITE linear;
+}
+@keyframes fa {
+    0% 100%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+}
+ @keyframes SLIDER{
+2%{ background-image: URL("RR.jpg");}
+4%{background-image:URL("SRGI.jpg");}
+8%{background-image:URL("BANSAL.jpg");}
+16%{background-image: URL("BBD.jpg");}
+20%{background-image: URL("BNCET.jpg");}
+25%{background-image: URL("RAMSWAROOP.jpg");}
+26%{background-image: URL("GCRG.jpg");}
+30%{ background-image: URL("RR.jpg");}
+    
+}
